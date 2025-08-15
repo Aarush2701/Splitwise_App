@@ -24,7 +24,7 @@ export default function Login() {
   }, []);
 
   const handleGoogleLogin = () => {
-    window.location.href = 'https://splitwise-app-backend-ia0u.onrender.com/oauth2/authorization/google';
+    window.location.href = 'https://splitwise-appbackend.onrender.com/oauth2/authorization/google';
   };
 
   const handleLogin = async (e) => {

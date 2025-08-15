@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://splitwise-app-backend-ia0u.onrender.com',
+  baseURL: 'hhttps://splitwise-appbackend.onrender.com',
   
 });
 

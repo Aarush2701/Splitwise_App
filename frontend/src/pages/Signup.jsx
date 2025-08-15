@@ -21,7 +21,7 @@ export default function Signup() {
   const { login } = useAuth();
 
   const handleGoogleSignup = () => {
-    window.location.href = 'https://splitwise-app-backend-ia0u.onrender.com/oauth2/authorization/google';
+    window.location.href = 'https://splitwise-appbackend.onrender.com/oauth2/authorization/google';
   };
 
   const handleSignup = async (e) => {
