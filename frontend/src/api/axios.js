@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'splitwiseapp-production.up.railway.app',
+  baseURL: 'https://splitwiseapp-production.up.railway.app',
   
 });
 
