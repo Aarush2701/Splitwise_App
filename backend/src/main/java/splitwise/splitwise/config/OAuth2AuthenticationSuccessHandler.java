@@ -47,7 +47,7 @@ public class OAuth2AuthenticationSuccessHandler implements AuthenticationSuccess
         String jwt = jwtTokenUtil.generateToken(savedUser.getEmail(), savedUser.getUserid());
 
 
-        String redirectUrl = "http://localhost:3000/oauth2/redirect?token=" + jwt;
+        String redirectUrl = "https://splitwiseapp-production.up.railway.app/oauth2/redirect?token=" + jwt;
         response.sendRedirect(redirectUrl);
 
     }
