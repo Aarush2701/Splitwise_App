@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getUserFromToken } from '../utils/jwtUtils'; // assumes you have this
+import { getUserFromToken } from '../utils/jwtUtils'; 
 
 const AuthContext = createContext();
 
