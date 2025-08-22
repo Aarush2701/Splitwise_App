@@ -110,6 +110,16 @@ export default function AddExpense() {
       setSnackbar({ open: true, message: 'Please select a payer.', severity: 'error' });
       return;
     }
+    if (form.participants.length === 0) {
+    setSnackbar({ open: true, message: 'Please select at least one participant.', severity: 'error' });
+    return;
+  }
+
+  if ((form.splitType === 'EXACT' || form.splitType === 'PERCENTAGE') && 
+      form.values.some(v => !v && v !== 0)) {
+    setSnackbar({ open: true, message: 'Please enter all split values.', severity: 'error' });
+    return;
+  }
     setConfirmOpen(true);
   };
 
