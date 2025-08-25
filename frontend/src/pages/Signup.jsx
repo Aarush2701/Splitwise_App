@@ -20,7 +20,8 @@ export default function Signup() {
   const { login } = useAuth();
 
   const handleGoogleSignup = () => {
-    window.location.href = 'https://splitwise-appbackend.onrender.com/oauth2/authorization/google';
+    const backendUrl = process.env.REACT_APP_API_BASE_URL;
+    window.location.href = `${backendUrl}/oauth2/authorization/google`;
   };
 
   const handleSignup = async (e) => {
